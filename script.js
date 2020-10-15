@@ -23,6 +23,15 @@ $('#return-to-top').click(function() {      // When arrow is clicked
   }, 500);
 });
 
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#float-btn').fadeIn(200);    // Fade in the arrow
+  } else {
+      $('#float-btn').fadeOut(200);   // Else fade out the arrow
+  }
+});
+
+
 // ===== directions ==== 
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
@@ -78,3 +87,17 @@ $(window).scroll(function(){
       $('.nav-menu').removeClass('custom-navbar');
   }
 });
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
