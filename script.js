@@ -67,4 +67,14 @@ $(window).scroll(function(){
       $('.camera-img').removeClass('fromleft');
       $('.mission-text').removeClass('fromright');     
   }
-});    
+});  
+
+$(window).scroll(function(){
+  let position=$(this).scrollTop();
+  if(position>=200){
+      $('.nav-menu').addClass('custom-navbar');
+  }
+  else{
+      $('.nav-menu').removeClass('custom-navbar');
+  }
+});
