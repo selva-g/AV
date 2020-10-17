@@ -34,7 +34,7 @@ letter-spacing: 0ch;
 
 .nav-menu{
     background: white;
-    padding-bottom: 1%;
+   
     transition: all .7s;
 }
 .logo{
@@ -55,8 +55,14 @@ letter-spacing: 0ch;
 }
 .custom-navbar{
     padding: 3px 25px;
+    padding-top:7px;
     transition: all .5s;
 
+}
+.margin{
+    border-top: 2px groove rgb(216, 210, 210);
+    border-bottom: 2px groove rgb(216, 210, 210);
+    
 }
 
 .card{
