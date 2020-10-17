@@ -58,6 +58,15 @@ $(document).ready(function(){
   
 });
 
+$(document).ready(function(){
+  $('.float').click(function(){
+      $('.float').toggleClass('change');
+    
+  });
+  
+});
+
+
 
 $(window).scroll(function(){
   let position=$(this).scrollTop();
