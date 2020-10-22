@@ -1,13 +1,3 @@
-//var prevScrollpos = window.pageYOffset;
-//window.onscroll = function() {
- // var currentScrollPos = window.pageYOffset;
- // if (prevScrollpos > currentScrollPos) {
- ///   document.getElementById("new").style.top = "0";
- /// } else {
- //   document.getElementById("new").style.top = "-100px";
-//  }
- // prevScrollpos = currentScrollPos;
-//}
 
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
